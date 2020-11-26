@@ -24,6 +24,7 @@ project built with php and html with css
 > includes has the main php fiels
 
 ## how to run the project 
+>>you can find the project in https://mycmssitev1.000webhostapp.com/
 >> you can get your own copy from github.
 >> you have to open your project with localhost and do not forget to connect with database using  phpmyadmin and sql file attached with project 
 

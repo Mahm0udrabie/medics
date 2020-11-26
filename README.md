@@ -24,7 +24,6 @@ project built with php and html with css
 > includes has the main php fiels
 
 ## how to run the project 
->> or you can get your own copy from github.
->> download it open the project and open index.html file with your own browser.
+>> you can get your own copy from github.
 >> you have to open your project with localhost and do not forget to connect with database using  phpmyadmin and sql file attached with project 
 

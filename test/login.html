@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Greeting</title>
+    <style>
+        input[type="text"],  input[type="email"] {
+            background-color: black;
+            color: white;
+        }
+        #div {
+            width: 300px;
+            height: auto;
+            border: 1px solid black;
+        }
+    </style>
+
+
+</head>
+<body>
+    <h1 id="name"></h1>
+
+    <!-- <form action="">
+        <label for="username">username</label>
+        <input type="text" id="username">
+        <label for="text">body</label>
+        <input type="text" id="text">
+        <input type="button" value="onchange" onclick="changbackground()">
+    </form> -->
+
+    <!-- <div id="div">
+<img src="../images/dr.png" alt="">
+<img src="../images/dr.png" alt="">
+<img src="../images/dr.png" name="dr" alt="">
+<img src="../images/dr.png" alt="">
+<img src="../images/dr.png" alt="">
+
+    </div> -->
+    <!-- <input type="button" value="add Element" onclick="addElem()"> -->
+    <input type="text" name="" id="usrnm">
+    <input type="email" name="" id="email">
+
+    <input type="button" value="save info" onclick="saveInfo()">
+
+</body>
+<script>
+    var x =  location.search;
+
+  document.getElementById('name').innerHTML = "Welcome " +  x.slice(10)[0].toUpperCase() +  
+  x.slice(10).slice(1);
+  function changbackground() {
+      var elem = document.querySelectorAll('input[type="text"]');
+      for (let i = 0; i < elem.length; i++) {
+          elem[i].style.backgroundColor ="red";          
+      }
+  }
+  function addElem() {
+      var textNode = document.createTextNode("This is node text");
+     // document.body.insertBefore(textNode,document.getElementById('div'));
+
+        document.getElementById('div').appendChild(textNode);
+        document.body.appendChild(textNode);
+  }
+//   document.images[0].style.border = "1px solid blue";
+//   document.images['dr'].style.border = "1px solid blue";
+//   document.forms[0].elements[1].style.border = "4px solid blue";
+
+  function saveInfo() {
+      var date =new Date();
+      date.setMonth(date.getMonth() + 3);
+
+      var val = document.getElementById('usrnm').value;
+      var email = document.getElementById('email').value;
+
+      // presistent cookie
+      document.cookie = "usernameCookie="+val+";expires="+ date;
+      document.cookie = "emailCookie="+email+";expires="+ date;
+
+  }
+
+  </script>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form >
+        <input type="button" value="sendInfo"  onclick="document.forms[0].submit()">
+        <input type="button" value="clearInfo" onclick="document.forms[0].reset()">
+        <br>
+        <select id="menu" multiple >
+            <option value="1">HTML</option>
+            <option value="2">CSS</option>
+            <option value="3">JavaScript</option>  
+            <option value="4">SaSS</option>
+            <option value="5">PHP</option>
+            <option value="6">mysql</option>
+        </select>
+        </form>
+        <button id="btn1">display info</button>
+        <div id="sVal"></div>
+        <hr>
+        <div id="sTxt"></div>
+    
+</body>
+
+<style>
+    .red {
+        background-color: red;
+    }
+</style>
+
+    <form id="myForm">
+    <input type="text" id="validate" class=""/>
+    </form>
+<script>
+function pressHandler(e) {
+    console.log(this.value);
+    if (parseInt(this.value) <= 3) {
+        this.className = "red";
+    } else {
+        this.className = "";
+    }
+}
+
+document.getElementById("validate").addEventListener("keyup",pressHandler);
+</script>
+
+
+<script src="form.js"></script>
+</html>

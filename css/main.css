@@ -1,0 +1,237 @@
+nav {
+     background-color: #2b96cc;
+ }
+ nav ul li {
+     padding: 0 10px 0 10px;
+ }
+ nav .nav-item a {
+      color:white !important;
+     font-family:sans-serif;
+ }
+#backgroundImage {
+    background-image:url('../images/background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 700px;
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.main-text {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color:white ;
+    position: relative;
+    top: 100px;
+    margin: auto;
+    height: 220px;
+    width: 40%;
+    padding: 15px;
+    background-color: #2b96cce6;
+}
+ @media screen and (max-width: 900px) {
+     .main-text{
+       display: block;
+     }
+ }
+
+ 
+ div select , #search{
+     height: 50px !important;
+ }
+
+ div #loc {
+
+    height: 50px !important;
+    background-color: #007bff;
+
+
+ }
+
+ 
+
+#location {
+    color: darkred ;
+}
+
+#hidden_div {
+    display: block;
+}
+.footer1 {
+    background: #fff url("../images/footer/footer-bg.png") repeat scroll left top;
+    padding-top: 40px;  
+    padding-right: 0;
+    padding-bottom: 20px;
+    padding-left: 0;
+}
+
+.title-widget {
+    color: #898989;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 1;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 25px;
+    margin-left: 0;
+    padding-left: 28px;
+}
+
+.title-widget::before {
+    background-color: #ea5644;
+    content: "";
+    height: 22px;
+    left: 0px;
+    position: absolute;
+    top: -2px;
+    width: 5px;
+}
+
+
+
+.widget_nav_menu ul {
+    list-style: outside none none;
+    padding-left: 0;
+}
+
+.widget_archive ul li {
+    background-color: rgba(0, 0, 0, 0.3);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 7px;
+    width: 3px;
+}
+
+
+.widget_nav_menu ul li {
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 20px;
+    position: relative;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    margin-bottom: 7px;
+    padding-bottom: 7px;
+    width: 95%;
+}
+
+
+
+.title-median {
+    color: #636363;
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    text-transform: uppercase;
+    font-family: 'Fjalla One', sans-serif;
+}
+
+.footerp p {
+    font-family: 'Gudea', sans-serif;
+}
+
+Only Needed in Multi-Coloured Variation */ .social-fb:hover {
+    color: #3B5998;
+}
+
+.social-tw:hover {
+    color: #4099FF;
+}
+
+.social-gp:hover {
+    color: #d34836;
+}
+
+.social-em:hover {
+    color: #f39c12;
+}
+
+.nomargin {
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer-bottom {
+    background-color: #2b96cc;
+    min-height: 30px;
+    width: 100%;
+    padding: 50px;
+}
+
+.copyright {
+    color: #fff;
+    line-height: 30px;
+    min-height: 30px;
+    padding: 7px 0;
+    text-align: center;
+    margin: auto;
+}
+#soicalcontacts
+{
+    text-align: center;
+
+}
+.fa{
+    color: white;
+}
+/* feedback */
+div #feed, textarea::placeholder {
+    padding: 5px;
+}
+div #feed, textarea {
+   width: 100%; 
+   border:0px solid transparent;
+   border-bottom:2px solid #007bff ;
+   background-color: #fdfdfdb2;
+}
+input[type="submit"]:focus {
+    box-shadow: inset 0 -1px 0 #ddd;
+}
+@media only screen and (max-width: 700px) {
+    .main-text{
+        margin-top: -50px;
+      width: 90%;
+      height: 220px;
+    }
+  }
+ 
+   .custom-file-input {
+    color: transparent;
+  }
+  .custom-file-input::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+  .custom-file-input::before {
+    content: 'Select some files';
+    color: black;
+    display: inline-block;
+    background: -webkit-linear-gradient(top, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    white-space: nowrap;
+    -webkit-user-select: none;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+
+  .custom-file-input:hover::before {
+    border-color: black;
+  }
+  .custom-file-input:active {
+    outline: 0;
+  }
+  .custom-file-input:active::before {
+    background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+  }
+  

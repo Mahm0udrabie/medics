@@ -1,0 +1,30 @@
+body {
+    width: 2000px;
+}
+
+.demo {
+    width: 100px;
+    height: 100px;
+    background-color: gray;
+    display: inline-block;
+    margin: 10px;
+}
+.demo1 {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    margin: 10px;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.blue {
+    background-color: blue;
+}
+.black {
+    background-color: black;
+}
+

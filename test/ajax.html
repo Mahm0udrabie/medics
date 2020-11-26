@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ajax response</title>
+</head>
+<body>
+    <input type="button" name="" value="get text" id="btn">
+    <div></div>
+</body>
+
+<script>
+document.getElementById('btn').addEventListener('click', function() {
+    var xhr = new XMLHttpRequest();
+    var txt = "",josnObj,jsObj;
+    xhr.onreadystatechange = function() {
+        if(xhr.readyState == 4) 
+            if(xhr.statusText == "OK") {
+                josnObj =  xhr.responseText;
+                jsObj   =  JSON.parse(josnObj);
+                console.log(jsObj);
+                document.getElementsByTagName('div')[0].innerHTML = jsObj[2].data[0].username;
+            }
+            
+    }
+    xhr.open("GET","file.json");
+    xhr.send("");
+});
+</script>
+</html>

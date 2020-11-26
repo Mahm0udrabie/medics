@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <p v-if="show">you can see me?</p>
+        <p v-else>now you see me</p>
+        <button @click="show=!show">show me</button>
+        <hr>
+        <div class="demo" @click="attachRed = !attachRed" :class="divClasses"></div>
+        <div class="demo" :class="{red: attachRed}"></div>
+        <div class="demo" :class="[color, {red: attachRed}]"></div>
+        <div class="demo" :style="myStyle"></div>
+
+
+<hr>
+width:  <input type="text" v-model="width">
+
+      width:  <input type="range" step="10" min="10" max ="500" v-model="width">
+      height:  <input type="range" step="10" min="10" max ="500" v-model="height">
+
+       color : <input type="color" v-model="color">
+    </div>
+
+</body>
+<script src="vue.js"></script>
+</html>

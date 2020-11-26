@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+
+
+</head>
+<body>
+    <div id="app" >
+        <tmp></tmp> 
+        <hr>
+      <tmp></tmp> 
+
+     
+        <p>{{calc()}}</p>
+        <h1 v-once>{{title}}</h1>
+        <input type="text" v-model="name">
+        <p>{{name}}</p>
+        <input type="text" v-on:input="changeTitle" name="username" id="">
+        <input type="text" v-on:input="changeTitle" name="email" id="">
+        <p>{{error}}</p>
+
+        <p>{{sayHello()}}</p>
+
+        <a v-bind:href="link">Google</a>
+        <a :href="link">Another Google</a>
+
+        <hr>
+        <p v-html="finishedLink"></p>
+
+        <!-- <button v-on:click="increase(2, $event)">click me</button> -->
+        <button @click="counter++">Increase</button>
+
+        <button v-on:click="counter--">Decrease</button>
+
+        <button @click="secondCounter++">SecondIncrese</button>
+
+
+        <p >Counter : {{counter}}  | {{secondCounter}}</p>
+        <p >Result  : {{result()}} | {{output}}</p>
+
+
+
+        <p v-on:mousemove="updateCoordinates">Coordinates :{{x}} / {{y}}
+
+            - <span v-on:mousemove.stop="">DEAD SPOT</span>
+             
+        </p>
+        <input type="text" v-on:keyup.enter="alertMe">
+    </div>
+    <div id="app2">
+        <tmp></tmp> 
+        <hr>
+        <tmp></tmp> 
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
+
+
+
+
+  

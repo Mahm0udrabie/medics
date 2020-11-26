@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="app">
+        <p>{{title}}</p>
+        <p v-if="" v-for="error in errors">{{error}}</p>
+
+        <br>
+        <ul>
+            <li v-for="i in arr">{{i}}
+                <button @click="arr.splice(arr.indexOf(i),1)">clear</button>
+            </li>
+
+        </ul>
+   
+        <form action="">
+        <input type="text" name="" id="" v-model="spices" >
+        <button @click.prevent="addNew()" :disabled="!spices">Add New</button>
+        <input type="button"  @click.prevent="arr.sort()" value="sort">
+        <input type="button"  @click.prevent="arr.sort(fn)" value="sort numbers">
+        <input type="button" @click.prevent="fun()" v-if="arr.length > 1" value="clear all">
+    </form>
+
+
+        
+
+    </div>
+
+</body>
+<script>
+    new Vue({
+        el:"#app",
+        data:{
+            title:"Hello",
+            arr: ['Mahmoud','SD',5000,'CEO'],
+            person: {name:"Mahmoud Rabie", course: "vue js" , cost: 3500, location: " Cairo"},
+            spices:"",
+            errors:[],
+            key:"",
+            value:""
+        },
+        methods: {
+            fn: function(a,b) {return a - b;},
+            fun: function() {this.arr = [];},
+            addNew: function() {
+                if(this.arr.includes(this.spices)) {
+                    this.errors.push("this task already exist");                 
+                } else {
+                    this.arr.push(this.spices);
+                    this.errors = [];
+                    this.spices = ""
+                }
+            }
+        }
+    });
+</script>
+</html>

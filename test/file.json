@@ -1,0 +1,20 @@
+[
+    {"type":"header","version":"4.9.5deb2","comment":"Export to JSON plugin for PHPMyAdmin"},
+    {"type":"database","name":"medics"},
+    {"type":"table","name":"account","database":"medics","data":
+    [
+    {"Acc_ID":"37","username":"Mahmoud","password":"25f9e794323b453885f5181f1b624d0b","Email":"mahmoud405@outlook.com","Type":"1","patient_id":null,"Doctor_ID":"28"},
+    {"Acc_ID":"102","username":"Mah654","password":"7aa5f080d9b999c6941946b247c013a9","Email":"ali500@go.co","Type":"patient","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"103","username":"Ahd6547","password":"274efe9fab0b00b7c75b551f2f8f0c13","Email":"ali0500@go.co","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"104","username":"Mmoj5","password":"827ccb0eea8a706c4c34a16891f84e7b","Email":"mm@sd.cp","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"105","username":"mosda55","password":"93279e3308bdbbeed946fc965017f67a","Email":"ali565@go.co","Type":"patient","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"106","username":"Hasan5a","password":"274efe9fab0b00b7c75b551f2f8f0c13","Email":"m@we.ccc","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"107","username":"Ahmed23","password":"827ccb0eea8a706c4c34a16891f84e7b","Email":"mahmoud4s@outlook.com","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"108","username":"Mah45","password":"0dd718ee18749005a4d19b1da44d9d09","Email":"ali5444@go.co","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"109","username":"Ma77jka","password":"274efe9fab0b00b7c75b551f2f8f0c13","Email":"ali@go.co","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"110","username":"A66d23","password":"7aa5f080d9b999c6941946b247c013a9","Email":"kl444@go.co","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"111","username":"Ma7moud","password":"25f9e794323b453885f5181f1b624d0b","Email":"maho@we.cop","Type":"doctor","patient_id":null,"Doctor_ID":null},
+    {"Acc_ID":"112","username":"Mah987","password":"af15d5fdacd5fdfea300e88a8e253e82","Email":"aler@erc.d","Type":"doctor","patient_id":null,"Doctor_ID":null}
+    ]
+    }
+    ]

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>div size</title>
+    <script src="https://unpkg.com/vue@2.6.12/dist/vue.js"></script>
+
+</head>
+<style>
+    #div {
+        border:5px solid black;
+    }
+
+</style>
+<body>
+    <div id="app">
+        <label for="width">width : 
+            <input type="range" max="200" min="10" step="10" v-model="width"> 
+            <input type="text" v-model="width"> 
+
+       </label>    
+       <label for="height">height
+       <input type="range" max="200" min="10" step="10" v-model="height">
+       <input type="text" v-model="height" > 
+    </label>
+        <div id="div" :style="myStyle" @click.prevent="changeSize" ></div>
+        <input type="range" max="200" v-on:input="changeStyle" min="10" step="10" v-model="widthHeight">
+
+
+    </div>
+    <script>
+        new Vue({
+            el:"#app",
+            data: {
+                color:'gray',
+                width:100,
+                height:100,
+                widthHeight:100
+            },
+            computed: {
+                myStyle() {
+                    return {
+                backgroundColor: this.color,
+                width: this.width +"px",
+                height: this.height +"px"
+            }
+                }
+                ,
+            changeStyle() {
+              this.height = this.widthHeight;
+              this.width  = this.widthHeight;        
+            },
+            
+            },
+            methods: {
+                changeSize(event) {
+                var x = event.clientX;
+                var y = event.clientY;
+                console.log(x,y);
+                console.log();
+                console.log(event.offsetX,event.offsetY);
+            }
+            }
+        });
+
+    </script>
+</body>
+</html>
